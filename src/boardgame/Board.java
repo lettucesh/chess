@@ -1,14 +1,13 @@
 package boardgame;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Board {
+
     private int rows;
     private int columns;
     private Piece[][] pieces;
 
-    public Board(int columns, int rows) {
+    public Board(int rows, int columns) {
         this.columns = columns;
         this.rows = rows;
         pieces = new Piece[rows][columns];
@@ -31,26 +30,28 @@ public class Board {
     }
 
     public Piece piece(int row, int columns) {
-
+        return pieces[row][columns];
     }
 
     public Piece piece(Position position) {
-
+        return pieces[position.getRow()][position.getColumn()];
     }
 
     public void placePiece(Piece piece, Position position) {
-
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
     }
+//
+//    public void removePiece(Position position) {
+//
+//    }
+//
+//    public boolean positionExists(Position position) {
+//
+//    }
+//
+//    public boolean thereIsAPiece(Position position) {
+//
+//    }
 
-    public removePiece(Position position) {
-
-    }
-
-    public boolean positionExists(Position position) {
-
-    }
-
-    public boolean thereIsAPiece(Position position) {
-
-    }
 }

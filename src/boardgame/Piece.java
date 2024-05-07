@@ -1,6 +1,7 @@
 package boardgame;
 
 public class Piece {
+
     protected Position position;
     private Board board;
 
@@ -12,15 +13,15 @@ public class Piece {
         return board;
     }
 
-    public Piece possibleMoves() {
-
-    }
-
-    public boolean possibleMove(Position position) {
-
-    }
-
-    public boolean isThereAnyPossibleMove() {
-
-    }
+//    public Piece possibleMoves() {
+//
+//    }
+//
+//    public boolean possibleMove(Position position) {
+//
+//    }
+//
+//    public boolean isThereAnyPossibleMove() {
+//
+//    }
 }
